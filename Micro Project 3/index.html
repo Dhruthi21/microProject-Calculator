@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <p>Calculator</p>
+        <div class="output">
+            <input type="text" id="output-inner" readonly/>
+        </div>
+        <div class="num">
+            <div class="container">
+                <button class="num-inner" onclick="getInput('7')">7</button>
+                <button class="num-inner" onclick="getInput('8')">8</button>
+                <button class="num-inner" onclick="getInput('9')">9</button>
+                <button class="num-inner" onclick="delHandler()" id="btn-del">Del</button>
+                <button class="num-inner" onclick="getInput('4')">4</button>
+                <button class="num-inner" onclick="getInput('5')">5</button>
+                <button class="num-inner" onclick="getInput('6')">6</button>
+                <button class="num-inner" onclick="getInput('+')">+</button>
+                <button class="num-inner" onclick="getInput('1')">1</button>
+                <button class="num-inner" onclick="getInput('2')">2</button>
+                <button class="num-inner" onclick="getInput('3')">3</button>
+                <button class="num-inner" onclick="getInput('-')">-</button>
+                <button class="num-inner" onclick="getInput('.')">.</button>
+                <button class="num-inner" onclick="getInput('0')">0</button>
+                <button class="num-inner" onclick="getInput('/')">/</button>
+                <button class="num-inner" onclick="getInput('x')">x</button>
+                <button class="num-inner" onclick="resetHandler()" id="btn-reset">RESET</button>
+                <button class="num-inner" onclick="result()" id="btn-result">=</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
